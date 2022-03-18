@@ -1,0 +1,26 @@
+.card {
+    min-height: 150px;
+    max-height: 150px;
+    margin: 15px;
+}
+
+.image-completo {
+    font-weight: bold;
+    background-color: #00ff00;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-incompleto {
+    font-weight: bold;
+    background-color: #ff1e00;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corpo {
+    height: 500px;
+}

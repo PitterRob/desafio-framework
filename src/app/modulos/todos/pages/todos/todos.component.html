@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h4 class="text-center">Página de To-dos </h4>
+    </div>
+</div>
+<div class="row mt-3" *ngIf="!loading">
+
+    <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h4 class="text-center">Feito </h4>
+        </div>
+        <div *ngFor="let completo of completos;" class="col-sm-12 col-md-12 col-lg-12">
+            <mat-card class="card">
+                <mat-card-header>
+                    <div mat-card-avatar class="image-completo">{{completo.id}}</div>
+                    <mat-card-title>{{completo.title}}</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h4 class="text-center">A fazer </h4>
+        </div>
+        <div *ngFor="let incompleto of incompletos;" class="col-sm-12 col-md-12 col-lg-12">
+            <mat-card class="card">
+                <mat-card-header>
+                    <div mat-card-avatar class="image-incompleto">{{incompleto.id}}</div>
+                    <mat-card-title>{{incompleto.title}}</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div class="row corpo" *ngIf="loading">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h4 class="text-center">Carregando... </h4>
+    </div>
+</div>

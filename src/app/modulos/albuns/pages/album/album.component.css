@@ -1,0 +1,17 @@
+.card {
+    min-height: 150px;
+    max-height: 150px;
+    margin: 15px;
+}
+
+.image {
+    font-weight: bold;
+    background-color: #0091ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corpo {
+    height: 500px;
+}
